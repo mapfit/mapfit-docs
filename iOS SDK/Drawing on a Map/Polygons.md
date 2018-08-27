@@ -1,7 +1,4 @@
----
-title: "Polygons"
-excerpt: ""
----
+# Polygons
 To add a polygon to your map, you will need to define the coordinates of each point of the polygon and add it to an instance of the [MFTPolygonOptions] class. After the creation of the polygon options class, you can add a polygon to your map. In the code sample below, you can see 8 clearly defined lat/long points for a polygon.
 
 ```swift
@@ -21,24 +18,10 @@ let polygon = mapView.addPolygon(options: polygonOptions)
 ```
 
 When rendered on a map, it will look like this.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/327ab62-Polygon.png",
-        "Polygon.png",
-        810,
-        1614,
-        "#c4c8c9"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/327ab62-Polygon.png)
 There is no limit on the number of polygons you can have on a map.
 
-#Styling a Polygon
+## Styling a Polygon
 You can style a polygon through it's [MFTPolygonOptions](ref:mftpolygonoptions) object. The following attributes can be edited: 
 - Fill color
 - Stroke color
@@ -49,19 +32,19 @@ You can style a polygon through it's [MFTPolygonOptions](ref:mftpolygonoptions) 
 
 Changing styling attributes are optional.
 
-##Color
+## Color
 Color attributes are set with a hex string in the format `#AARRGGBB`. The first two digits will represent the alpha and are optional.
 
-##Width
+## Width
 You can set the pixel width attributes with positive integers. The default width of the stroke outline width is `0`.
 
-##Join type
+## Join type
 You can change the shape of intersection between two lines. You can define it as a miter, bevel or round. Rounding is done by adding extra points. See reference for [MFTLineJoinType](ref:mftlinejointype).
 
-##The code
+## The code
 The code below demonstrates how to change all of the style attributes.
 
-##Before Polygon Creation
+## Before Polygon Creation
 It is advisable to create a polygon options class with your desired attributes before creating the polygon. 
 ```swift
          let polygonOptions = MFTPolygonOptions()
@@ -74,7 +57,7 @@ It is advisable to create a polygon options class with your desired attributes b
          polygonOptions.setLineCapType(.round)
          let polygon = mapView.addPolygon(options: polygonOptions)
 ```
-##After Polygon Creation
+## After Polygon Creation
 If you need to edit the attributes at a later time, you can access them directly from the polygon class.
 ```swift
          polygon.strokeOutlineWidth = 8
@@ -85,18 +68,4 @@ If you need to edit the attributes at a later time, you can access them directly
          polygon.lineJoinType = .round
 ```
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9167189-polygonCustom.png",
-        "polygonCustom.png",
-        810,
-        1614,
-        "#bdc2c6"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/9167189-polygonCustom.png)

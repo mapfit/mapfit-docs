@@ -1,7 +1,4 @@
----
-title: "Directions"
-excerpt: ""
----
+# Directions
 For most use cases, directions can be retrieved through the [PlaceInfo](ref:infocard) class by calling the `enableDirectionsButton()` method; this will prompt a user flow resulting in directions from a specified start location to the clicked marker's location.  For more advanced use cases that require extracting particular data elements from the directions response, interacting with [Directions](ref:directions-2) may be necessary.
 
 To obtain directions, you can use the `Directions` class as below. Specify an origin and destination address or coordinate to get the Route.  See [Directions](ref:directions-2) for more detail.
@@ -142,4 +139,5 @@ The response should look like the following:
     -73.995218,
     40.74498
   ]
-}```
+}
+```
