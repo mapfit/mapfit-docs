@@ -1,7 +1,4 @@
----
-title: "Polylines"
-excerpt: ""
----
+# Polylines
 To add a polyline to your map, you will need to define the coordinates of each point of the polyline and add it to an instance of the [MFTPolylineOptions] class. After the creation of the polyline options class, you can add a polyline to your map. Those points will need to then be saved into one array which will serve as the polyline. 
 
 In the code sample below, you can see a polyline drawn on a map.
@@ -67,24 +64,10 @@ polylineOptions.addPoints([[CLLocationCoordinate2D(latitude:40.729877, longitude
 
 let polyline = mapview.addPolyline(options: polylineOptions)
 ```
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/377811a-Polyline.png",
-        "Polyline.png",
-        810,
-        1614,
-        "#cacbc9"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/377811a-Polyline.png)
 There is no limit on the number of polylines you can have on a map.
 
-#Styling a Polyline
+## Styling a Polyline
 You can style a polyline through it's [MFTPolylineOptions](ref:mftpolylineoptions) object. The following attributes can be edited: 
 - Stroke color
 - Stroke width
@@ -95,23 +78,23 @@ You can style a polyline through it's [MFTPolylineOptions](ref:mftpolylineoption
 
 Changing styling attributes are optional.
 
-##Color
+## Color
 Color attributes are set with a hex string in the format `#AARRGGBB`. The first two digits will represent the alpha and are optional.
 
-##Width
+## Width
 You can set the pixel width attributes with positive integers. The default width of the stroke outline width is `0`.
 
-##Cap type
+## Cap type
 You can change the shape of the end of the polylines. You can define it as a bound, square or round. See reference for [MFTLineCapType](ref:mftlinecaptype).
 
-##Join type
+## Join type
 You can change the shape of intersection between two lines. You can define it as a miter, bevel or round. Rounding is done by adding extra points. See reference for [MFTLineJoinType](ref:mftlinejointype).
 
 
-##The code
+## The code
 The code below demonstrates how to change all of the style attributes.
 
-##Before Polyline Creation
+## Before Polyline Creation
 It is advisable to create a polyline options class with your desired attributes before creating the polyline. 
 ```swift
          let polylineOptions = MFTPolylineOptions()
@@ -124,7 +107,7 @@ It is advisable to create a polyline options class with your desired attributes 
          polylineOptions.setLineCapType(.round)
          let polyline = mapView.addPolyline(options: polylineOptions)
 ```
-##After Polyline Creation
+## After Polyline Creation
 If you need to edit the attributes at a later time, you can access them directly from the Polyline class.
 ```swift
          polyline.strokeOutlineWidth = 8
@@ -135,18 +118,4 @@ If you need to edit the attributes at a later time, you can access them directly
          polyline.lineJoinType = .round
 ```
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f7ad5ac-polylineCustom.png",
-        "polylineCustom.png",
-        810,
-        1614,
-        "#c3c4c5"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/f7ad5ac-polylineCustom.png)

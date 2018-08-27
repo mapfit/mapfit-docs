@@ -1,8 +1,5 @@
----
-title: "Map View"
-excerpt: ""
----
-#Map Center
+# Map View
+## Map Center
 ### Get Center
 ```swift
 mapView.getCenter()
@@ -17,7 +14,7 @@ mapView.setCenter(position: CLLocationCoordinate2D(latitude: 40, longitude: -73)
 
 ```
 
-###Set center with offset
+### Set center with offset
 ```swift
 mapView.setCenterWithOffset(latLng: CLLocationCoordinate2D(latitude: 40, longitude: -73), offsetX: 500, offsetY: 500, duration: 2)
 ```
@@ -27,7 +24,7 @@ mapView.setCenterWithOffset(latLng: CLLocationCoordinate2D(latitude: 40, longitu
 mapView.reCenter()
 ```
 
-#Map Tilt
+## Map Tilt
 ### Get current tilt angle
 ```swift
  mapView.getTilt()
@@ -42,13 +39,13 @@ mapView.setTilt(tiltValue: 4, duration: 0.5)
 ```
 
 
-#Map Zoom Level
-###Get current zoom level
+## Map Zoom Level
+### Get current zoom level
 ```swift
 mapView.getZoom()
 ```
 
-###Set zoom level
+### Set zoom level
 ```swift
 mapView.setZoom(zoomLevel: 4)
 
@@ -57,23 +54,23 @@ mapView.setZoom(zoomLevel: 4, duration: 0.5)
 
 
 ```
-###Set maximum zoom level
+### Set maximum zoom level
 ```swift
 mapView.mapOptions.setMaxZoomLevel(zoomLevel: 13)
 ```
-###Set minimum zoom level
+### Set minimum zoom level
 ```swift
 mapView.mapOptions.setMinZoomLevel(zoomLevel: 4)
 ```
 
 
-#Map Rotation
-###Get current map rotation (compass direction)
+## Map Rotation
+### Get current map rotation (compass direction)
 ```swift
 mapView.getRotation()
 ```
 
-###Set map rotation (compass direction)
+### Set map rotation (compass direction)
 ```swift
 mapView.setRotation(rotationValue: 4)
 
@@ -82,13 +79,13 @@ mapView.setRotation(rotationValue: 4, durations: 0.5)
 ```
 
 
-#Map Bounds
-###Get current map bounds
+## Map Bounds
+### Get current map bounds
 ```swift
  mapView.getLatLngBounds()
 ``` 
 
-###Set map bounds
+### Set map bounds
 ```swift
 var builder = MFTLatLngBounds.Builder()
 
@@ -113,7 +110,11 @@ mapView.setLatLngBounds(bounds: bounds, padding: paddingPercentage, duration: 2)
 ```
 
 ### Get latitude and longitude from screen postion
+```swift
 let latLng = mapview.screenPositionToLatLng(position)
+```
            
 ### Get Screen position from latitude and longitude
+```swift
 let point = mapview.LatLngToScreenPosition(latLng)
+```

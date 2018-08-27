@@ -1,8 +1,5 @@
----
-title: "Geocoding"
-excerpt: ""
----
-# Geocoding API Quick Start Guide - iOS
+# Geocoding
+## Geocoding API Quick Start Guide - iOS
 Mapfit Geocoding API is a service to convert addresses to entrance-aligned latitude/longitude and to find any place, region or point of interest by name. You can use the Geocoding API directly from the iOS SDK.
 
 ## Pre-requirements

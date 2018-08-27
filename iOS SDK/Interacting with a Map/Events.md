@@ -1,8 +1,5 @@
----
-title: "Events"
-excerpt: ""
----
-#Track click events
+# Events
+## Track click events
 
 In `viewDidLoad` set delegates
 ```swift
@@ -19,7 +16,7 @@ In `viewDidLoad` set delegates
 
 ```
 
-#Single Tap Listener
+### Single Tap Listener
 ```swift
 extension ViewController: MapSingleTapGestureDelegate {
     func mapView(_ view: MFTMapView, recognizer: UIGestureRecognizer, shouldRecognizeSingleTapGesture location: CGPoint) -> Bool {
@@ -31,7 +28,7 @@ extension ViewController: MapSingleTapGestureDelegate {
     }
 }
 ```
-#Double Tap Listener
+### Double Tap Listener
 ```swift
 extension ViewController: MapDoubleTapGestureDelegate {
     func mapView(_ view: MFTMapView, recognizer: UIGestureRecognizer, shouldRecognizeDoubleTapGesture location: CGPoint) -> Bool {
@@ -43,7 +40,7 @@ extension ViewController: MapDoubleTapGestureDelegate {
     }
 }
 ```
-#Long Press Listener 
+### Long Press Listener 
 ```swift
 extension ViewController : MapLongPressGestureDelegate {
     func mapView(_ view: MFTMapView, recognizer: UIGestureRecognizer, shouldRecognizeLongPressGesture location: CGPoint) -> Bool {
@@ -56,7 +53,7 @@ extension ViewController : MapLongPressGestureDelegate {
 }
 ```
 
-#Pan Listener
+### Pan Listener
 ```swift
 extension ViewController : MapPanGestureDelegate {
     func mapView(_ view: MFTMapView, didPanMap displacement: CGPoint) {
@@ -65,7 +62,7 @@ extension ViewController : MapPanGestureDelegate {
 }
 ```
 
-#Pinch Listener
+### Pinch Listener
 ```swift
 extension ViewController : MapPinchGestureDelegate {
     func mapView(_ view: MFTMapView, didPinchMap location: CGPoint) {
@@ -74,7 +71,7 @@ extension ViewController : MapPinchGestureDelegate {
 }
 ```
 
-#Rotate Listener
+### Rotate Listener
 ```swift
 extension ViewController : MapRotateGestureDelegate {
     func mapView(_ view: MFTMapView, didRotateMap location: CGPoint) {
@@ -83,7 +80,7 @@ extension ViewController : MapRotateGestureDelegate {
 }
 ```
 
-#Marker
+### Marker
 ```swift
 extension ViewController: MapMarkerSelectDelegate {
     func mapView(_ view: MFTMapView, didSelectMarker marker: MFTMarker, atScreenPosition position: CGPoint) {
@@ -92,7 +89,7 @@ extension ViewController: MapMarkerSelectDelegate {
 }
 ```
 
-#Polygon
+### Polygon
 ```swift
 extension ViewController : MapPolygonSelectDelegate {
     func mapView(_ view: MFTMapView, didSelectPolygon polygon: MFTPolygon, atScreenPosition position: CGPoint) {
@@ -101,7 +98,7 @@ extension ViewController : MapPolygonSelectDelegate {
 }
 ```
 
-#Polyline
+### Polyline
 ```swift
 extension ViewController : MapPolylineSelectDelegate {
     func mapView(_ view: MFTMapView, didSelectPolyline polygon: MFTPolyline, atScreenPosition position: CGPoint) {
@@ -110,7 +107,7 @@ extension ViewController : MapPolylineSelectDelegate {
 }
 ```
 
-#User Location
+### User Location
 ```swift
 extension ViewController : LocationUpdateDelegate {
     func didRecieveLocationUpdate(_ location: CLLocation) {
