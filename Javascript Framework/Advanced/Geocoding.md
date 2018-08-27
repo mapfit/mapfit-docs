@@ -1,7 +1,4 @@
----
-title: "Geocoding"
-excerpt: ""
----
+# Geocoding
 **Geocode**
 
 For most use cases, geocoding can be done through the [Marker](ref:marker) class by setting the `address` property; this will allow your markers to be geocoded within the map view.  For more advanced use cases that require extracting particular data elements from the geocoder response, interacting with the [Geocoder](ref:geocoderapi) may be necessary.
@@ -92,4 +89,5 @@ The response should look like the following:
     "lat": 38.904022
   }],
   "postal_code": "20007"
-}] ```
+}]
+```
