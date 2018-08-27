@@ -1,8 +1,5 @@
----
-title: "Directions"
-excerpt: ""
----
-# Directions API Quick Start Guide - iOS
+# Directions
+## Directions API Quick Start Guide - iOS
 
 Mapfit Directions API is a service to obtain directions between locations. You can use Directions API directly from the iOS SDK.
 
@@ -55,18 +52,4 @@ You can specify the type of directions you would like to get as driving, walking
             
         }
 ```
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/878ccad-Directions.png",
-        "Directions.png",
-        810,
-        1614,
-        "#c8cac9"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/878ccad-Directions.png)

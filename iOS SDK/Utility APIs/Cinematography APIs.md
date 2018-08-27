@@ -1,22 +1,5 @@
----
-title: "Cinematography APIs"
-excerpt: ""
----
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/595497a-b8ed89f-orbitanim.gif",
-        "b8ed89f-orbitanim.gif",
-        480,
-        240,
-        "#eaeaec"
-      ]
-    }
-  ]
-}
-[/block]
+# Cinematography APIs
+![](https://files.readme.io/595497a-b8ed89f-orbitanim.gif)
 To create a 360° pan animation around a pivot, you can use [OrbitAnimation](ref:orbitanimation) like below.    
 
 ```swift

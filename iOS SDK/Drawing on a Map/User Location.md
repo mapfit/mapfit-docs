@@ -1,8 +1,4 @@
----
-title: "User Location"
-excerpt: ""
----
-##User Location
+# User Location
 
 To add and track a user's location, you will first have add the NSLocationWhenInUseUsageDescription key to your app's Info.plist file. Note: Xcode displays this key as "Privacy - Location When In Use Usage Description" in the Info.plist editor.
 
