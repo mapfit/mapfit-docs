@@ -17,37 +17,14 @@ Familiar with [Postman](https://www.getpostman.com/)? Download and run our postm
 ### Options
 
 These are the options for a post request.
-[block:parameters]
-{
-  "data": {
-    "h-0": "Parameters",
-    "0-0": "source-address",
-    "1-0": "source-location",
-    "2-0": "destination-address",
-    "3-0": "destination-location",
-    "4-0": "type",
-    "h-1": "Type",
-    "0-1": "Object",
-    "1-1": "Object",
-    "2-1": "Object",
-    "3-1": "Object",
-    "4-1": "String",
-    "h-2": "Explanation",
-    "0-2": "This is an object that containing the street address of the starting location",
-    "0-3": "{ \n\"street_address\" : \"119 W 24th St\", \n\"locality\" : \"New York\", \"admin_1\" : \"NY\" \n}",
-    "1-2": "This is an object that containing the lat/lng of the starting location",
-    "1-3": "{ \n\"lat\" : 40.74405, \n\"lon\" : -73.99324\n}",
-    "2-2": "This is an object that containing the street address of your destination",
-    "2-3": "{ \n\"street_address\" : \" 660 Madison Ave, \n\"locality\" : \"New York\", \"admin_1\" : \"NY\" \n}",
-    "3-2": "This is an object that containing the lat/lng of the starting location",
-    "4-2": "This is the type of directions you want to receive",
-    "4-3": "\"walking\"",
-    "3-3": "{ \n\"lat\" : 40.74405, \n\"lon\" : -73.99324\n}"
-  },
-  "cols": 4,
-  "rows": 5
-}
-[/block]
+
+Parameters | Type | Explanation| |
+-----------|------|------------|-----------|
+source-address| Object| This is an object that containing the street address of the starting location | `{ "street_address" : "119 W 24th St", "locality" : "New York", "admin_1" : "NY" }`
+source-location | Object| This is an object that containing the lat/lng of the starting location | ` { "lat" : 40.74405, "lon" : -73.99324 }`
+destination-address| Object| This is an object that containing the street address of your destination| `{ "street_address" : " 660 Madison Ave, "locality" : "New York", "admin_1" : "NY" }` 
+destination-location| Object| This is an object that containing the lat/lng of the starting location| `{ "lat" : 40.74405, "lon" : -73.99324 }` 
+type| String| This is the type of directions you want to receive| "walking"
 
 ### POST Get Directions (via Address)
 A sample POST request is seen below. Make sure to include your API key in the call.
