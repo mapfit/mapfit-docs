@@ -1,7 +1,3 @@
----
-title: "Directions"
-excerpt: ""
----
 # Directions API Quick Start Guide - Android
 
 Mapfit Directions API is a service to obtain directions between locations. You can use Directions API directly from the Android SDK.

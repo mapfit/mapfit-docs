@@ -1,32 +1,29 @@
----
-title: "Themes"
-excerpt: ""
----
-#Setting a map theme
+# Themes
+## Setting a map theme
 
-# Theme options
+## Theme options
 
-We currently have 3 [MapTheme](ref:maptheme) available for use.
+We currently have 3 [Map Themes](ref:maptheme) available for use.
 
 ### Day Theme
 
 ```kotlin
 mapfitMap.getMapOptions().theme = MapTheme.MAPFIT_DAY 
 ```
-![](../img/f8f68c0-theme-day-ss.png)
+![](https://files.readme.io/f8f68c0-theme-day-ss.png)
 ### Night Theme
 
 ```kotlin
 mapfitMap.getMapOptions().theme = MapTheme.MAPFIT_NIGHT
 ```
-![](../img/7ba746e-theme-night-ss.png)
+![](https://files.readme.io/7ba746e-theme-night-ss.png)
 
 ### Grayscale Theme
 
 ```kotlin
 mapfitMap.getMapOptions().theme = MapTheme.MAPFIT_GRAYSCALE
 ```
-![](../img/309fbab-theme-grayscale-ss.png)
+![](https://files.readme.io/309fbab-theme-grayscale-ss.png)
 
 ###Initializing MapView With A Default Theme
 You also can initialize the [MapView](ref:mapview) with default themes.

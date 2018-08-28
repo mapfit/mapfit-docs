@@ -1,8 +1,4 @@
----
-title: "User location"
-excerpt: ""
----
-## User location
+# User location
 To display the user's location on the map, follow the steps below.
 
 ## Location Permission

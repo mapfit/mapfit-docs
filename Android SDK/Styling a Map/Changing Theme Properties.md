@@ -1,8 +1,4 @@
----
-title: "Changing Theme Properties"
-excerpt: ""
----
-## Changing Theme Properties
+# Changing Theme Properties
 It is possible to change the values of the properties inside current theme at runtime.
 
 For a theme with an attribute like below,

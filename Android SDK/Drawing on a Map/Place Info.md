@@ -1,8 +1,4 @@
----
-title: "Place Info"
-excerpt: ""
----
-## Place Info
+# Place Info
 
 To display a PlaceInfo you need to specify a title or two subtitles for your [Marker](https://mapfit-android.readme.io/v1.0.0/reference#marker-1). If you set any, when [Marker](https://mapfit-android.readme.io/v1.0.0/reference#marker-1) is clicked, a  PlaceInfo will be displayed. 
 You can add a title and subtitles as below.
@@ -14,8 +10,8 @@ You can add a title and subtitles as below.
             .subtitle1("111 Macdougal St (btwn Bleecker & W 3rd St)")
             .subtitle2("Pizza, Italian"))
 ```
-![](../img/94cad69-place-info-ss.png)
-#Listen to Place Info Clicks
+![](https://files.readme.io/94cad69-place-info-ss.png)
+## Listen to Place Info Clicks
 Click events are can be listened by setting an [OnPlaceInfoClickListener](ref:onplaceinfoclicklistener) as below. 
 ```kotlin
 mapfitMap.setOnPlaceInfoClickListener(object : MapfitMap.OnPlaceInfoClickListener {
@@ -24,7 +20,7 @@ mapfitMap.setOnPlaceInfoClickListener(object : MapfitMap.OnPlaceInfoClickListene
             }
         })
 ```
-#Custom Place Info View
+## Custom Place Info View
 If you'd like to use your [PlaceInfo](ref:placeinfo) for your [Marker](ref:marker-1), you can do it by setting a [PlaceInfoAdapter](ref:placeinfoadapter) using [MapfitMap](ref:mapfitmap) as below. 
 
 ```kotlin
