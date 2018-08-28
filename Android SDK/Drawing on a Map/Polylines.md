@@ -2,61 +2,31 @@
 title: "Polylines"
 excerpt: ""
 ---
+## Polylines
 #Add a Polyline
 To add a [Polyline](https://mapfit-android.readme.io/v1.0.0/reference#polyline) to your map, you will need a `List<LatLng>` object which includes the coordinates of your line.
 Once you have your `List<LatLng>`, you can add it to your map as below. See [PolylineOptions](ref:polylineoptions).
-[block:code]
-{
-  "codes": [
-    {
-      "code": "val linePoints: List<LatLng> = getLinePoints()\n\nval polyline = mapfitMap.addPolyline(PolylineOptions().points(linePoints))\n",
-      "language": "kotlin",
-      "name": "kotlin"
-    },
-    {
-      "code": "List<LatLng> linePoints = getLinePoints();\n  \nPolyline polyline = mapfitMap.addPolyline(new PolylineOptions().points(linePoints));",
-      "language": "java",
-      "name": "java"
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/639af95-polyline-ss.png",
-        "polyline-ss.png",
-        1772,
-        3401,
-        "#b4b5b3"
-      ]
-    }
-  ]
-}
-[/block]
+```kotlin
+val linePoints: List<LatLng> = getLinePoints()
+
+val polyline = mapfitMap.addPolyline(PolylineOptions().points(linePoints))
+
+```
+![](../img/639af95-polyline-ss.png)
 There is no limit on the number of polylines you can have on a map. Note that, adding an excessive amount of polylines can reduce performance.
 
 # Extend Polyline
 You can add points to the [Polyline](ref:polyline) after you create it as below.
-[block:code]
-{
-  "codes": [
-    {
-      "code": "// you can add a sigle LatLng\npolyline.addPoints(LatLng(40.744023, -73.993150))\n\n// you can add multiple LatLngs\npolyline.addPoints(LatLng(40.74402, -73.9931),\n                   LatLng(40.74403, -73.9932),\n                   LatLng(40.74404, -73.9933))",
-      "language": "kotlin",
-      "name": "kotlin"
-    },
-    {
-      "code": "// you can add a sigle LatLng\npolyline.addPoints(new LatLng(40.744023, -73.9931));\n\n// you can add multiple LatLngs\npolyline.addPoints(new LatLng(40.74402, -73.9932),\n                   new LatLng(40.74403, -73.9933),\n                   new LatLng(40.74404, -73.9934));",
-      "language": "java",
-      "name": "java"
-    }
-  ]
-}
-[/block]
+```kotlin
+// you can add a sigle LatLng
+polyline.addPoints(LatLng(40.744023, -73.993150))
+
+// you can add multiple LatLngs
+polyline.addPoints(LatLng(40.74402, -73.9931),
+                   LatLng(40.74403, -73.9932),
+                   LatLng(40.74404, -73.9933))
+```
 #Styling a Polyline
 You can style a polyline trough it's [PolylineOptions](ref:polylineoptions) object. You can change a polyline's
 - Stroke color
@@ -86,35 +56,21 @@ You can change the draw order of a [Polyline](ref:polyline) to set its z-depth. 
 
 ##The code
 The code below demonstrates how to change all of the style attributes.
-[block:code]
-{
-  "codes": [
-    {
-      "code": " val polyline = mapfitMap.addPolyline(\n                    PolylineOptions()\n                        .points(line)\n                        .strokeWidth(3)\n                        .strokeOutlineWidth(8)\n                        .strokeColor(\"#4353ff\")\n                        .strokeOutlineColor(\"#4c4353ff\")\n                        .lineJoinType(JoinType.ROUND)\n                        .drawOrder(600)\n                        .lineCapType(CapType.ROUND)\n                )\n\n// after initializing the polyline, you can change the style for each attribute like below\npolyline.strokeWidth = 10",
-      "language": "kotlin",
-      "name": "kotlin"
-    },
-    {
-      "code": "Polyline polyline = mapfitMap.addPolyline(new PolylineOptions()\n                .points(line)\n                .strokeWidth(3)\n                .strokeOutlineWidth(8)\n                .strokeColor(\"#4353ff\")\n                .strokeOutlineColor(\"#4c4353ff\")\n                .lineJoinType(JoinType.ROUND)\n                .drawOrder(600)\n                .lineCapType(CapType.ROUND));\n\n// after initializing the polyline, you can change the style for each attribute like below\npolyline.setStrokeWidth(10);",
-      "language": "java",
-      "name": "java"
-    }
-  ]
-}
-[/block]
+```kotlin
+ val polyline = mapfitMap.addPolyline(
+                    PolylineOptions()
+                        .points(line)
+                        .strokeWidth(3)
+                        .strokeOutlineWidth(8)
+                        .strokeColor("#4353ff")
+                        .strokeOutlineColor("#4c4353ff")
+                        .lineJoinType(JoinType.ROUND)
+                        .drawOrder(600)
+                        .lineCapType(CapType.ROUND)
+                )
+
+// after initializing the polyline, you can change the style for each attribute like below
+polyline.strokeWidth = 10
+```
 This is how the polyline looks like after styling.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a0e2b0f-styled-polyline.png",
-        "styled-polyline.png",
-        1772,
-        3401,
-        "#b0b0b1"
-      ]
-    }
-  ]
-}
-[/block]
+![](../img/a0e2b0f-styled-polyline.png)
